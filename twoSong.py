@@ -12,9 +12,9 @@ with open("dejavu.cnf.SAMPLE") as f:
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(
         description="Dejavu: Audio Fingerprinting library")
-    parser.add_argument("file1", help="qq")
-    parser.add_argument("file2", help="qq")
-    parser.add_argument('-a',"--all", help="qq", action="store_true")
+    parser.add_argument("file1", help="file1 be compared")
+    parser.add_argument("file2", help="file2 be recognized")
+    parser.add_argument('-a',"--all", help="print all results.\n Not only file1 and flie2, but also all the files in database (past songs)", action="store_true")
     args = parser.parse_args()
     if not args.file1 or not args.file2:
         parser.print_help()
