@@ -51,4 +51,8 @@ $ docker-compose down
 If you want to be able to use the microphone with the Docker container, you'll need to do a [little extra work](https://stackoverflow.com/questions/43312975/record-sound-on-ubuntu-docker-image). I haven't had the time to write this up, but if anyone wants to make a PR, I'll happily merge.
 
 ## usage
+```shell
 root@f9ea95ce5cea:/code# python twoSong.py test/woodward_43s.wav test/sean_secs.wav
+# or if you want all results
+root@f9ea95ce5cea:/code# python twoSong.py -a test/woodward_43s.wav test/sean_secs.wav
+```
